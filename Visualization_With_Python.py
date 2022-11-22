@@ -13,7 +13,7 @@ pip install matplotlib
 pip install seaborn
 
 
-# In[10]:
+# In[94]:
 
 
 import pandas as pd 
@@ -21,17 +21,17 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
-#plt.show()
+plt.show()
 
 
-# In[9]:
+# In[95]:
 
 
 diabetic_df = pd.read_csv('diabetic_data.csv')
 diabetic_df.head()
 
 
-# In[91]:
+# In[96]:
 
 
 #using boxplot to compare Gender to Amount of Time Spent in the Hospital
@@ -44,7 +44,7 @@ plt.plot()
 plt.show()
 
 
-# In[90]:
+# In[97]:
 
 
 #using a histogram to understand how many patients fall into each A1C result category 
@@ -58,7 +58,7 @@ plt.plot()
 plt.show()
 
 
-# In[92]:
+# In[98]:
 
 
 # using a lineplot to compare Number of Patients in Emergency compared to each Age Range
@@ -71,7 +71,7 @@ plt.plot()
 plt.show()
 
 
-# In[93]:
+# In[99]:
 
 
 #using a violoinplot to compare Diabetes Diagnosis alongside the number of medications a patient is taking
