@@ -31,7 +31,7 @@ diabetic_df = pd.read_csv('diabetic_data.csv')
 diabetic_df.head()
 
 
-# In[88]:
+# In[91]:
 
 
 #using boxplot to compare Gender to Amount of Time Spent in the Hospital
@@ -40,9 +40,11 @@ sns.boxplot(x='gender', y='time_in_hospital', data=diabetic_df, hue='race', pale
 plt.title('Time Spent in Hospital Compared to Gender and Race')
 plt.xlabel('Gender')
 plt.ylabel('Time Spent in Hospital')
+plt.plot()
+plt.show()
 
 
-# In[87]:
+# In[90]:
 
 
 #using a histogram to understand how many patients fall into each A1C result category 
@@ -53,9 +55,10 @@ plt.xlabel("A1Cresult")
 plt.ylabel("Number of Patients")
 plt.title("Number of Patients Per Reported Race")
 plt.plot()
+plt.show()
 
 
-# In[73]:
+# In[92]:
 
 
 # using a lineplot to compare Number of Patients in Emergency compared to each Age Range
@@ -64,10 +67,11 @@ sns.lineplot(data=diabetic_df, x='age', y='number_emergency', hue='race', linewi
 plt.title('Age vs Number of Emergencies')
 plt.xlabel('Age Ranges')
 plt.ylabel('Number of Patients in Emergency')
-plt.plot() 
+plt.plot()
+plt.show()
 
 
-# In[74]:
+# In[93]:
 
 
 #using a violoinplot to compare Diabetes Diagnosis alongside the number of medications a patient is taking
@@ -78,7 +82,8 @@ sns.violinplot(x='diabetesMed', y='num_medications',data=diabetic_df, color='#33
 plt.title('Comparison of the Number of Medications a Diabetic vs Non-Diabetic Patient Takes')
 plt.xlabel('Diabetes Diagnosis')
 plt.ylabel('Number of Medications')
-plt.plot() 
+plt.plot()
+plt.show()
 
 
 # In[ ]:
